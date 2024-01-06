@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JNAG</title>
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/works.css" />
+    <link rel="stylesheet" href="assets/css/prices.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+
+    <!-- FONTAWESOME LINKS -->
+    <link rel="stylesheet" href="assets/fonstawesome/css/all.css" />
+
+    <!-- JAVASCRIPT LINKS -->
+    <script src="details.js" defer></script>
+    <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/works.js" defer></script>
+    <script src="assets/js/dark-mode.js" defer></script>
+    <script src="assets/js/prices.js" defer></script>
+
+    <!-- TEST -->
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation-bar">
+        <ul>
+          <li class="navigation-button home active">Home</li>
+          <li class="navigation-button works">Works</li>
+          <li class="navigation-button prices">prices</li>
+          <li class="navigation-button contact">Contact</li>
+          <span class="dark-mode-container active">
+            <i class="fa-moon"></i>
+            <input type="checkbox" name="dark-mode" id="dark-mode" />
+          </span>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <article id="home" class="content about-content">
+        <figure class="home">
+          <div class="figure-container">
+            <div class="desc-container">
+              <div class="figure-name px56"></div>
+              <div class="figure-desc px24"></div>
+            </div>
+            <div class="social-container">
+              <div class="link"><a href="#" class="px21"></a></div>
+              <div class="icon-container"></div>
+            </div>
+          </div>
+          <img
+            src="assets/img/jomar-nedroda.png"
+            alt="image of the owner"
+            height="100px"
+            width="100px"
+          />
+        </figure>
+      </article>
+
+      <article id="works" class="content works-content">
+        <figure class="one">
+          <img
+            src="assets/img/background.png"
+            alt="a sample artworks"
+            class="works-image"
+          />
+          <img
+            src="assets/img/jomar-nedroda.png"
+            alt="a handsome man in his 20s"
+            class="profile"
+          />
+          <figcaption style="text-align: center">
+            Here are some of my best work.
+          </figcaption>
+          <div class="curtain"></div>
+        </figure>
+      </article>
+
+      <article id="prices" class="content prices-content">
+        <h1 class="title px24">You can get them at these prices.</h1>
+        <div class="slider"></div>
+      </article>
+
+      <article id="contact" class="content contact-content">
+        <div class="left-content">
+          <h1 class="px36">You can email me here,</h1>
+          <form action="post">
+            <input type="text" name="name" class="name" placeholder="Name" />
+            <input
+              type="email"
+              name="email"
+              class="email"
+              placeholder="Email"
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message..."
+            ></textarea>
+            <input type="submit" value="Send" name="send" />
+          </form>
+        </div>
+        <div class="right-content">
+          <h1 class="px36">or You can reach me here</h1>
+          <div class="container"></div>
+        </div>
+      </article>
+    </main>
+    <footer class="footer">
+      <h1 class="px56" style="padding: 1rem 0">jnag.blog</h1>
+      <hr />
+      <div class="content" style="padding: 1rem 0"></div>
+    </footer>
+    <div class="popup"></div>
+  </body>
+</html>

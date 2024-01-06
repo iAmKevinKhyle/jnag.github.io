@@ -1,0 +1,60 @@
+:root {
+  --background-color: #e7dfd8;
+  --text-color: #231f20;
+
+  --text-size-56: 3.5rem;
+  --text-size-36: 2.25rem;
+  --text-size-24: 1.5rem;
+  --text-size-21: 1.3125rem;
+  --text-size-22: 1.375rem;
+  --text-size-14: 0.875rem;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+
+  /* outline: 1px solid red; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main.main-content {
+  padding: 0 7.5%;
+}
+
+footer {
+  height: 10vh;
+}
+
+.px56 {
+  font-size: var(--text-size-56);
+}
+.px36 {
+  font-size: var(--text-size-36);
+}
+.px24 {
+  font-size: var(--text-size-24);
+}
+.px21 {
+  font-size: var(--text-size-21);
+}
+.px22 {
+  font-size: var(--text-size-22);
+}
+.px14 {
+  font-size: var(--text-size-14);
+}

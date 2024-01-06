@@ -1,0 +1,13 @@
+#dark-mode {
+  display: none;
+}
+
+span.dark-mode-container > i {
+  font-size: var(--text-size-24);
+  padding: 0 0.3rem;
+  cursor: pointer;
+}
+
+span.dark-mode-container > i:hover {
+  text-shadow: 0 1px 10px var(--text-color);
+}

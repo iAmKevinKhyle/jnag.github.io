@@ -1,0 +1,79 @@
+article#contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-top: 1.5rem;
+  gap: 2rem;
+}
+
+article#contact > div.left-content {
+  width: 100%;
+  max-width: 550px;
+}
+article#contact > div > h1 {
+  margin-block: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+article#contact > div.left-content > form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+article#contact > div.left-content > form > * {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: var(--text-size-21);
+  letter-spacing: 0.15rem;
+  resize: none;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  outline: none;
+  border: 0;
+  box-shadow: inset 0 1px 7px var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  transition: font-weight 300ms ease;
+}
+article#contact > div.left-content > form > *:focus {
+  font-weight: 900;
+}
+article#contact > div.left-content > form > input[type="submit"] {
+  box-shadow: inset 0 1px 7px var(--text-color);
+  font-weight: 700;
+  color: var(--text-color);
+  transition: all 300ms ease;
+}
+article#contact
+  > div.left-content
+  > form
+  > input[type="submit"]:is(:focus, :target) {
+  box-shadow: inset 0 1px 7px var(--text-color);
+  font-weight: 900;
+}
+article#contact > div.left-content > form > input[type="submit"]:hover {
+  box-shadow: 0 1px 7px var(--text-color);
+  background-color: var(--text-color);
+  color: var(--background-color);
+  transform: scale(0.99);
+}
+article#contact > div.right-content {
+  flex: 1;
+  max-width: max-content;
+}
+article#contact > div.right-content > div.container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+article#contact > div.right-content > div.container > a {
+  font-size: var(--text-size-56);
+  color: var(--text-color);
+}
+
+article#contact > div.right-content > div.container > a:hover {
+  text-shadow: 0 1px 5px var(--text-color);
+}

@@ -1,0 +1,183 @@
+article#works {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  grid-template-areas:
+    "one two three four"
+    "five two three four"
+    "five seven eight four"
+    "five seven eight six";
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  height: 85vh;
+}
+
+@media (max-width: 1130px) {
+  article#works {
+    grid-template-areas:
+      "one three four"
+      "two three four"
+      "two eight five"
+      "six eight five"
+      "six seven seven";
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+  }
+}
+
+@media (max-width: 700px) {
+  article#works {
+    grid-template-areas:
+      "one three"
+      "six six"
+      "two four"
+      "two eight"
+      "five eight"
+      "five seven";
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+  }
+}
+
+@media (max-width: 500px) {
+  article#works {
+    grid-template-areas:
+      "one"
+      "six"
+      "two"
+      "three"
+      "four"
+      "five"
+      "eight"
+      "seven";
+    grid-template-rows: auto repeat(7, 1fr);
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  article#works > figure {
+    max-height: 325px;
+  }
+
+  article#works > figure.one {
+    max-height: 250px;
+  }
+}
+
+article#works > figure {
+  background-color: var(--text-color);
+  box-shadow: 0 1px 5px var(--text-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+article#works > figure.one {
+  grid-area: one;
+}
+article#works > figure.work2 {
+  grid-area: two;
+}
+article#works > figure.work3 {
+  grid-area: three;
+}
+article#works > figure.work4 {
+  grid-area: four;
+}
+article#works > figure.work5 {
+  grid-area: five;
+}
+article#works > figure.work6 {
+  grid-area: six;
+}
+article#works > figure.work7 {
+  grid-area: seven;
+}
+article#works > figure.work8 {
+  grid-area: eight;
+}
+
+article#works > figure > img:not(img.profile) {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+article#works > figure > img.profile {
+  height: calc(100% - 20px);
+  aspect-ratio: 1;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: 0.2rem solid var(--text-color);
+}
+article#works > figure > img.profile {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+article#works > figure > figcaption,
+div.popup > figure > figcaption {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 85%;
+  z-index: 2;
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+
+article#works > figure > div.curtain,
+div.popup > figure > div.curtain {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background-image: linear-gradient(transparent, var(--background-color) 75%);
+  z-index: 1;
+}
+
+article#works > figure.works {
+  transition: transform 300ms ease;
+}
+article#works > figure.works:hover {
+  transform: scale(1.025);
+}
+
+div.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-color);
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  display: none;
+}
+
+div.popup > figure {
+  height: 100%;
+  width: auto;
+  position: relative;
+  box-shadow: 0 1px 5px var(--text-color);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform 300ms ease;
+}
+
+div.popup > figure > img {
+  height: 100%;
+  width: 100%;
+}

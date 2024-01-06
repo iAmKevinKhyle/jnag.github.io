@@ -1,0 +1,23 @@
+footer.footer {
+  margin-top: 3rem;
+  min-height: 20vh;
+  height: auto;
+  box-shadow: 1px 0 7px var(--text-color);
+  padding: 0 7.5% 1.5rem 7.5%;
+}
+
+footer.footer > div.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer.footer > div.content > a {
+  color: var(--text-color);
+}
+footer.footer > div.content > a:hover {
+  text-shadow: 0 1px 5px var(--text-color);
+  text-decoration: underline;
+}
